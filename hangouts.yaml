@@ -1,3 +1,4 @@
+## hotwords (i.e. sonne) which trigger to send text to hangouts from intent_script.yaml, via notify.yaml
 intents:
   sunset:
     sentences:
