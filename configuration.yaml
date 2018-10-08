@@ -1,0 +1,56 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: metric
+  time_zone: Europe/Berlin
+  customize: !include customize.yaml
+
+automation: !include automations.yaml
+binary_sensor: !include binarysensor.yaml
+# cloud:
+config:
+conversation:
+device_tracker: !include devicetracker.yaml
+discovery:
+duckdns:
+  domain: !secret duckdns_domain
+  access_token: !secret duckdns_token
+frontend:
+group: !include groups.yaml
+hangouts: !include hangouts.yaml
+history:
+hue:
+  bridges:
+    - host: !secret ip_hue
+      allow_unreachable: true
+      allow_hue_groups: true
+intent_script: !include intent_script.yaml
+# introduction:
+logbook:
+map:
+mqtt:
+  broker: !secret ip_mqtt_broker
+notify: !include notify.yaml
+recorder:
+  purge_keep_days: 5
+  purge_interval: 1
+script: !include scripts.yaml
+sensor: !include sensor.yaml
+sun:
+switch: !include switch.yaml
+tradfri:
+  host: !secret ip_ikeahub
+  allow_tradfri_groups: false
+tts:
+  - platform: google
+updater:
+  include_used_components: true
+weather:
+  - platform: darksky
+    api_key: !secret darksky_api
+  - platform: met
+zwave:
+  usb_path: /dev/ttyACM0
+  network_key: !secret zwave_key
