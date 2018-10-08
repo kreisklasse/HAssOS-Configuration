@@ -1,0 +1,7 @@
+sunset:
+  speech:
+    text: Sonne Elevation {{ states.sun.sun.attributes.elevation }} °<br>SR {{ states.sun.sun.attributes.next_rising }} <br>SS {{ states.sun.sun.attributes.next_setting }}
+    
+Temperatur_Wohnung:
+  speech:
+    text: Temperaturen in der Wohnung <br> {{ states.switch.assistenten.attributes.temperature }} Assistenten<br> {{ states.switch.bed.attributes.temperature }} Schlafzimmer<br> {{ states.switch.office_links.attributes.temperature }} Büro L1<br> {{ states.switch.office_mitte.attributes.temperature }} Büro L2<br> {{ states.switch.hassbianpi.attributes.temperature }} Büro R1<br> {{ states.switch.pi2holeopenvpn.attributes.temperature }} Büro R2<br> {{ states.switch.kuche_rechts.attributes.temperature }} Küche rechts<br> {{ states.switch.kuche_oben.attributes.temperature }} Küche oben<br> {{ states.switch.tv.attributes.temperature }} TV
