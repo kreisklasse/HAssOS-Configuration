@@ -1,3 +1,4 @@
+## hotwords from hangouts.yaml trigger i.e. sunset, to send the text to hangouts via notify.yaml
 sunset:
   speech:
     text: Sonne Elevation {{ states.sun.sun.attributes.elevation }} °<br>SR {{ states.sun.sun.attributes.next_rising }} <br>SS {{ states.sun.sun.attributes.next_setting }}
