@@ -1,0 +1,12 @@
+intents:
+  sunset:
+    sentences:
+      - sonne
+    conversations:
+      - id: !secret hangout_id
+  Ping:
+    sentences:
+      - ping
+  Temperatur_Wohnung:
+    sentences:
+      - temperatur wohnung
