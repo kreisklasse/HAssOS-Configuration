@@ -32,6 +32,12 @@ logbook:
 map:
 mqtt:
   broker: !secret ip_mqtt_broker
+  username: !secret mqtt_user
+  password: !secret mqtt_password
+mqtt_statestream:
+  base_topic: homeassistant
+  publish_attributes: true
+  publish_timestamps: true
 notify: !include notify.yaml
 recorder:
   purge_keep_days: 5
