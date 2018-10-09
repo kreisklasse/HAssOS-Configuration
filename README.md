@@ -33,6 +33,7 @@ My Home Assistant configuration files are running on my [Hass.io](https://www.ho
 
 - [Darksky Weather](https://www.home-assistant.io/components/weather.darksky/)
 - [Darksky Weather Sensor](https://www.home-assistant.io/components/sensor.darksky/)
+- [DuckDNS](https://www.home-assistant.io/components/duckdns/)
 - [Google Hangouts Hub](https://www.home-assistant.io/components/hangouts/) and [Notifications](https://www.home-assistant.io/components/notify.hangouts/)
 - [Google Travel Time](https://www.home-assistant.io/components/sensor.google_travel_time/)
 - [Luftdaten](https://www.home-assistant.io/components/sensor.luftdaten/)
