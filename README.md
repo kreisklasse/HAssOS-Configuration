@@ -8,18 +8,18 @@ My Home Assistant configuration files are running on my [Hass.io](https://www.ho
 - [Home-Assistant.io](https://home-assistant.io/) 
 - [HASS.OS](https://www.home-assistant.io/hassio/)
 - [HASSbian - Raspbian Image mit HomeAssistant auto-installer](https://home-assistant.io/docs/configuration/splitting_configuration/) (previously used on a Pi3)
-- [Splitting up the configuration.yaml](https://github.com/cbulock/home-assistant-configs) (does not work on HassOS and my Odroid, probably a folder rights problem)
+- [Splitting up the configuration.yaml](https://github.com/cbulock/home-assistant-configs) (does not work on HassOS on my Odroid, probably a folder rights problem)
 - [Storing secrets](https://home-assistant.io/docs/configuration/secrets/)
 
 
 ## Devices on HAss.OS
 
-- //Raspberry Pi 3//
 - [Odroid C2 with 8GB eMMC-Modul](https://www.pollin.de/p/odroid-c2-set-mit-8-gb-emmc-modul-gehaeuse-und-netzteil-810531)
-- AVM FritzDECT 200 Wall Plugs
+- AVM Fritz!Box 7490
+- AVM Fritz!DECT 200 Wall Plugs
 - Google Chromecast Audio
 - Google Chromecast
-- Osram Smart+ Plugs via HUE Bridge
+- Osram Smart+ Plugs (via HUE Bridge)
 - Philips Hue Bridge (v1)
 - Philips Hue Colour Bulbs (v1) (only 1 still working, 2 died after nearly 2,5 years)
 - Sonos Loudspeaker
@@ -36,8 +36,11 @@ My Home Assistant configuration files are running on my [Hass.io](https://www.ho
 - [Google Hangouts Hub](https://www.home-assistant.io/components/hangouts/) and [Notifications](https://www.home-assistant.io/components/notify.hangouts/)
 - [Google Travel Time](https://www.home-assistant.io/components/sensor.google_travel_time/)
 - [Luftdaten](https://www.home-assistant.io/components/sensor.luftdaten/)
+- [MQTT](https://www.home-assistant.io/components/mqtt/)
+- [MQTT - own server](https://www.home-assistant.io/docs/mqtt/broker#run-your-own)
+- [MQTT Statestream](https://www.home-assistant.io/components/mqtt_statestream/)
 - [Pi-Hole Sensor](https://www.home-assistant.io/components/sensor.pi_hole/)
-- [RESTful Sensor](https://www.home-assistant.io/components/sensor.rest/) for pulling data from Tankerkönig.de
+- [RESTful Sensor](https://www.home-assistant.io/components/sensor.rest/) for pulling data from [Tankerkönig.de](http://www.tankerkoenig.de/)
 - [SNMP Sensor](https://www.home-assistant.io/components/sensor.snmp/)
 - [Systemmonitor](https://www.home-assistant.io/components/sensor.systemmonitor/)
 - [Uptime HAss](https://www.home-assistant.io/components/sensor.uptime/)
