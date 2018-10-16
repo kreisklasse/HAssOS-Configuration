@@ -45,7 +45,7 @@ My Home Assistant configuration files are running on my [Hass.io](https://www.ho
 - [SNMP Sensor](https://www.home-assistant.io/components/sensor.snmp/)
 - [Systemmonitor](https://www.home-assistant.io/components/sensor.systemmonitor/)
 - [Uptime HAss](https://www.home-assistant.io/components/sensor.uptime/)
-- [Uptimerobot](https://www.home-assistant.io/components/binary_sensor.uptimerobot/)
+- [Uptimerobot](https://www.home-assistant.io/components/binary_sensor.uptimerobot/) - presently deactivated due to dns request flooding (~15.000 DNS request/day)
 - [Waze Travel Time](https://www.home-assistant.io/components/sensor.waze_travel_time/)
 - [YR.no Weather](https://www.home-assistant.io/components/sensor.yr/)
 
@@ -57,4 +57,4 @@ My Home Assistant configuration files are running on my [Hass.io](https://www.ho
 - [MQTT Server & Web client](https://community.home-assistant.io/t/community-hass-io-add-on-mqtt-server-web-client/70376)
 - [Portainer](https://community.home-assistant.io/t/community-hass-io-add-on-portainer/68836) (presently deactivated, see forum)
 - Samba
-- [SSH & Web Terminal](https://community.home-assistant.io/t/community-hass-io-add-on-ssh-web-terminal/33820)
+- [SSH & Web Terminal](https://community.home-assistant.io/t/community-hass-io-add-on-ssh-web-terminal/33820) - presently does not work on Odroid C2 with HassOS
