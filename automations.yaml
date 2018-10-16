@@ -1,4 +1,4 @@
-# 02.10.2018-a
+# 16.10.2018-a
 #
 ###  LED Band Küche oben - ON at Sunset
 - alias: LED Küche ON
@@ -8,8 +8,8 @@
     platform: sun
     event: sunset
   action:
-    - service: switch.turn_on
-      entity_id: switch.kuche_oben
+    - service: light.turn_on
+      entity_id: light.steckdose_wohzimmer
 #
 ###  LED Band Küche oben - OFF at 22:00
 - alias: LED Küche OFF
@@ -19,5 +19,5 @@
     platform: time
     at: "22:00:00"
   action:
-    - service: switch.turn_off
-      entity_id: switch.kuche_oben
+    - service: light.turn_off
+      entity_id: light.steckdose_wohzimmer
