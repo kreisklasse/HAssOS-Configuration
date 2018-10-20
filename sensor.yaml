@@ -74,6 +74,18 @@
   value_template: '{{ value_json.prices["5e665e1a-1512-49ab-822f-1e8d7cd51e93"].e10 }}'
   scan_interval: 603
 
+### Statistics Component - https://www.home-assistant.io/components/sensor.statistics/
+#### Kraftstoffpreise
+- platform: statistics
+  entity_id: sensor.agip_neustadt_e10
+  name: Agip E10 Stats
+- platform: statistics
+  entity_id: sensor.zeithstr_e10
+  name: Star E10 Stats
+- platform: statistics
+  entity_id: sensor.mundorf_e10
+  name: Mundorf E10 Stats
+
 ### Systemmonitor ###
 - platform: systemmonitor
   resources:
