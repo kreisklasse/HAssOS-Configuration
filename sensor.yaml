@@ -26,14 +26,14 @@
     - humidity
 
 ### Min-Max Sensor - https://www.home-assistant.io/components/sensor.min_max/
-#### Tankerkonig mean values
+#### Outside Temp
 - platform: min_max
-  name: Fuel Durchschnitt
+  name: Aussentemperatur
   type: mean
   entity_ids:
-    - sensor.agip_neustadt_e10
-    - sensor.mundorf_e10
-    - sensor.zeithstr_e10
+    - sensor.dark_sky_temperature
+    - sensor.yr_wetter_temperature
+    - sensor.luftdaten_temperature
 
 
 ### piHole openVPN Pi2 ###
