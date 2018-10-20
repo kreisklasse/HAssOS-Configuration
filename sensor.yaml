@@ -25,6 +25,18 @@
     - temperature
     - humidity
 
+### Min-Max Sensor - https://www.home-assistant.io/components/sensor.min_max/
+#### Outside Temp
+- platform: min_max
+  name: Aussentemperatur
+  type: mean
+  round_digits: 1
+  entity_ids:
+    - sensor.dark_sky_temperature
+    - sensor.yr_wetter_temperature
+    - sensor.luftdaten_temperature
+
+
 ### piHole openVPN Pi2 ###
 - platform: pi_hole
   host: !secret ip_pi2holeVPN
@@ -40,27 +52,27 @@
     - unique_domains
     - clients_ever_seen
     
-### Tankerkönig E10 Kraftstoffpreise  Query every 900+ seconds ###
+### Tankerkönig E10 Kraftstoffpreise  Query every 600+ seconds ###
 - platform: rest
-  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=xxxx&ids=2025cec6-d76f-422b-b305-fe6b75be12e9
+  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=a3de1edb-2025-54d6-a52d-692fc70561d1&ids=2025cec6-d76f-422b-b305-fe6b75be12e9
   name: Mundorf E10
   unit_of_measurement: '€'
   value_template: '{{ value_json.prices["2025cec6-d76f-422b-b305-fe6b75be12e9"].e10 }}'
-  scan_interval: 901
+  scan_interval: 601
   
 - platform: rest
-  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=xxxx&ids=005056ba-7cb6-1ed2-bceb-87412ca64d30
+  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=a3de1edb-2025-54d6-a52d-692fc70561d1&ids=005056ba-7cb6-1ed2-bceb-87412ca64d30
   name: Zeithstr E10
   unit_of_measurement: '€'
   value_template: '{{ value_json.prices["005056ba-7cb6-1ed2-bceb-87412ca64d30"].e10 }}'
-  scan_interval: 902
+  scan_interval: 602
   
 - platform: rest
-  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=xxxx&ids=5e665e1a-1512-49ab-822f-1e8d7cd51e93
+  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=a3de1edb-2025-54d6-a52d-692fc70561d1&ids=5e665e1a-1512-49ab-822f-1e8d7cd51e93
   name: Agip Neustadt E10
   unit_of_measurement: '€'
   value_template: '{{ value_json.prices["5e665e1a-1512-49ab-822f-1e8d7cd51e93"].e10 }}'
-  scan_interval: 903
+  scan_interval: 603
 
 ### Systemmonitor ###
 - platform: systemmonitor

@@ -58,3 +58,4 @@ My Home Assistant configuration files are running on my [Hass.io](https://www.ho
 - [Portainer](https://community.home-assistant.io/t/community-hass-io-add-on-portainer/68836) (presently deactivated, see forum)
 - Samba
 - [SSH & Web Terminal](https://community.home-assistant.io/t/community-hass-io-add-on-ssh-web-terminal/33820) - [presently does not work](https://github.com/home-assistant/hassio/issues/751) on Odroid C2 with HassOS
+
