@@ -1,22 +1,86 @@
 
-###
+### Car Group
 auto:
   name: Auto
   view: yes
   icon: mdi:car
   entities:
-    - group.fuel
+    - group.fuel1
+    - group.fuel2
+    - group.fuel3
     - group.traveltime
     
-fuel:
-  name: Kraftstoffkosten
+fuel1:
+  name: Star
+  entities:
+    - sensor.zeithstr_e10
+    - sensor.star_e10_stats_mean
+fuel2:
+  name: Mundorf
   entities:
     - sensor.mundorf_e10
-    - sensor.zeithstr_e10
-    
+    - sensor.mundorf_e10_stats_mean
+fuel3:
+  name: Agip
+  entities:
+    - sensor.agip_neustadt_e10
+    - sensor.agip_e10_stats_mean
 traveltime:
   name: Fahrzeiten
   entities:
     - sensor.fahrzeit_suhome
     - sensor.fahrzeit_homesu
     - sensor.arbeit
+
+### Steckdosen Group
+steckdosen:
+  name: Steckdosen
+  view: yes
+  icon: mdi:power-plug
+  entities:
+    - group.fritzoxu4
+    - group.fritzoc2
+    - group.fritzhc2
+    - group.fritzpi2hole
+    - group.fritzofficel
+    - group.fritzoffice2
+    - group.fritzkucherechts
+    - group.fritztv
+    - group.fritzbed
+
+fritzkucherechts:
+  name: Küche rechts
+  entities:
+    - switch.kuche_rechts
+fritzbed:
+  name: Schlafzimmer
+  entities:
+    - switch.bed
+fritztv:
+  name: TV
+  entities:
+    - switch.tv
+fritzoxu4:
+  name: Odroid XU4
+  entities:
+    - switch.fsd_1__odroidxu4
+fritzoc2:
+  name: HAssOdroid
+  entities:
+    - switch.fsd_2__hassosdroid
+fritzhc2:
+  name: NextclouDroid
+  entities:
+    - switch.fsd_3__nextclouddroid
+fritzpi2hole:
+  name: pi2HoleVPN
+  entities:
+    - switch.fsd_4__piholevpn
+fritzofficel:
+  name: Office Links
+  entities:
+    - switch.office_links
+fritzoffice2:
+  name: Office Mitte
+  entities:
+    - switch.office_mitte
