@@ -19,25 +19,24 @@ duckdns:
   access_token: !secret duckdns_token
 frontend:
 group: !include groups.yaml
-hangouts: !include hangouts.yaml
 history:
 hue:
   bridges:
     - host: !secret ip_hue
       allow_unreachable: true
-      allow_hue_groups: true
+      allow_hue_groups: false
 intent_script: !include intent_script.yaml
 # introduction:
 logbook:
 map:
-mqtt:
-  broker: !secret ip_mqtt_broker
-  username: !secret mqtt_user
-  password: !secret mqtt_password
-mqtt_statestream:
-  base_topic: homeassistant
-  publish_attributes: true
-  publish_timestamps: true
+#mqtt:
+#  broker: !secret ip_mqtt_broker
+#  username: !secret mqtt_user
+#  password: !secret mqtt_password
+#mqtt_statestream:
+#  base_topic: homeassistant
+#  publish_attributes: true
+#  publish_timestamps: true
 notify: !include notify.yaml
 recorder:
   purge_keep_days: 5
@@ -60,3 +59,4 @@ weather:
 zwave:
   usb_path: /dev/ttyACM0
   network_key: !secret zwave_key
+
