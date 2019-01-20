@@ -28,37 +28,35 @@ My Home Assistant configuration files are running on my [Hass.io](https://www.ho
 - Z-Wave USB.ME Stick
 - Z-Wave Fibaro FGMS001 Motion Sensor
 - Z-Wave Fibaro FGWPEF Wall Plugs
+- Zyxel 24-port Switch
 
 ## HAss Components used
 
 - [Darksky Weather](https://www.home-assistant.io/components/weather.darksky/)
 - [Darksky Weather Sensor](https://www.home-assistant.io/components/sensor.darksky/)
 - [DuckDNS](https://www.home-assistant.io/components/duckdns/)
-- [Google Hangouts Hub](https://www.home-assistant.io/components/hangouts/) and [Notifications](https://www.home-assistant.io/components/notify.hangouts/)
+- [AVM FritzBox Net Monitor](https://www.home-assistant.io/components/sensor.fritzbox_netmonitor/)
+- [AVM FritzBox Switch](https://www.home-assistant.io/components/switch.fritzdect/)
 - [Google Travel Time](https://www.home-assistant.io/components/sensor.google_travel_time/)
 - [Luftdaten](https://www.home-assistant.io/components/sensor.luftdaten/)
 - [Min/Max Sensor](https://www.home-assistant.io/components/sensor.min_max/)
-- [MQTT](https://www.home-assistant.io/components/mqtt/)
+- [MQTT](https://www.home-assistant.io/components/mqtt/) MQTT not used right now
 - [MQTT - own server](https://www.home-assistant.io/docs/mqtt/broker#run-your-own)
 - [MQTT Statestream](https://www.home-assistant.io/components/mqtt_statestream/)
+- [OpenSky Sensor](https://www.home-assistant.io/components/sensor.opensky/)
 - [Pi-Hole Sensor](https://www.home-assistant.io/components/sensor.pi_hole/)
 - [RESTful Sensor](https://www.home-assistant.io/components/sensor.rest/) for pulling data from [Tankerkönig.de](http://www.tankerkoenig.de/)
-- [SNMP Sensor](https://www.home-assistant.io/components/sensor.snmp/)
+- [SNMP Sensor](https://www.home-assistant.io/components/sensor.snmp/) for Zyxel Switch
 - [Statistics](https://www.home-assistant.io/components/sensor.statistics/)
 - [Systemmonitor](https://www.home-assistant.io/components/sensor.systemmonitor/)
 - [Uptime HAss](https://www.home-assistant.io/components/sensor.uptime/)
-- [Uptimerobot](https://www.home-assistant.io/components/binary_sensor.uptimerobot/) - presently deactivated due to dns request flooding (~15.000 DNS request/day)
+- [Uptimerobot](https://www.home-assistant.io/components/binary_sensor.uptimerobot/) - (~15.000 DNS request/day)
 - [Waze Travel Time](https://www.home-assistant.io/components/sensor.waze_travel_time/)
 - [Workday Binary Sensor](https://www.home-assistant.io/components/binary_sensor.workday/)
 - [YR.no Weather](https://www.home-assistant.io/components/sensor.yr/)
 
 ## HAss Add-Ons used
-- [IDE Cloud9](https://community.home-assistant.io/t/community-hass-io-add-on-ide-based-on-cloud9/33810)
 - [Log Viewer](https://community.home-assistant.io/t/community-hass-io-add-on-log-viewer/64377)
 - [Lovelace Migration](https://community.home-assistant.io/t/community-hass-io-add-on-lovelace-migration/61552)
-- [MotionEye](https://community.home-assistant.io/t/community-hass-io-add-on-motioneye/71826)
-- [MQTT Server & Web client](https://community.home-assistant.io/t/community-hass-io-add-on-mqtt-server-web-client/70376)
-- [Portainer](https://community.home-assistant.io/t/community-hass-io-add-on-portainer/68836) (presently deactivated, see forum)
 - Samba
-- [SSH & Web Terminal](https://community.home-assistant.io/t/community-hass-io-add-on-ssh-web-terminal/33820) - [presently does not work](https://github.com/home-assistant/hassio/issues/751) on Odroid C2 with HassOS
-
+- [Configurator][https://www.home-assistant.io/addons/configurator]
