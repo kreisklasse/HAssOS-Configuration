@@ -1,6 +1,6 @@
-### Uptimerobot.com - paused to to DNS request flooding ###
-# - platform: uptimerobot
-#     api_key: !secret uptimerobot_api
+### Uptimerobot.com - provides a lot of DNS requests
+- platform: uptimerobot
+  api_key: !secret uptimerobot_api
 
 ### Workday sensor - https://www.home-assistant.io/components/binary_sensor.workday/
 - platform: workday
