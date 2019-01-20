@@ -1,4 +1,7 @@
-- name: hangouts
-  platform: hangouts
-  default_conversations:
-    - id: !secret hangout_id
+# Mastodon
+- name: mastodontx
+  platform: mastodon
+  access_token: !secret masto_token
+  client_id: !secret masto_id
+  client_secret: !secret masto_secret
+  base_url: !secret masto_url
