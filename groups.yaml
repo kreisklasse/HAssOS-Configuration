@@ -1,5 +1,5 @@
 
-### Car Group
+# Car Group
 auto:
   name: Auto
   view: yes
@@ -28,11 +28,52 @@ fuel3:
 traveltime:
   name: Fahrzeiten
   entities:
-    - sensor.fahrzeit_suhome
-    - sensor.fahrzeit_homesu
+    - sensor.fahrzeit_home_su
+    - sensor.fahrzeit_su_home
     - sensor.arbeit
 
-### Steckdosen Group
+# Lights
+lights:
+  name: Lichter
+  view: yes
+  icon: mdi:lightbulb-on
+  entities:
+    - group.buro
+    - group.wohnzimmer
+    - group.eingang
+    - group.schlafzimmer
+    - group.kuche
+    
+buro:
+  name: Büro
+  entities:
+    - light.buroturm 
+    - light.steckdose_4
+    
+wohnzimmer:
+  name: Wohnzimmer
+  entities:
+    - light.wohnzimmer
+    - light.wohnzimmertisch
+    - light.wohnzimmer_2
+    - light.steckdose_3
+
+eingang:
+  name: Eingang
+  entities:
+    - light.gate
+    
+schlafzimmer:
+  name: Schlafzimmer
+  entities:
+    - light.schlafzimmer
+    
+kuche:
+  name: Küche
+  entities:
+    - light.steckdose_wohzimmer
+
+# Steckdosen
 steckdosen:
   name: Steckdosen
   view: yes
@@ -63,19 +104,19 @@ fritztv:
 fritzoxu4:
   name: Odroid XU4
   entities:
-    - switch.fsd_1__odroidxu4
+    - switch.fsd_1_odroidxu4
 fritzoc2:
   name: HAssOdroid
   entities:
-    - switch.fsd_2__hassosdroid
+    - switch.fsd_2_hassosdroid
 fritzhc2:
   name: NextclouDroid
   entities:
-    - switch.fsd_3__nextclouddroid
+    - switch.fsd_3_nextclouddroid
 fritzpi2hole:
   name: pi2HoleVPN
   entities:
-    - switch.fsd_4__piholevpn
+    - switch.fsd_4_piholevpn
 fritzofficel:
   name: Office Links
   entities:
@@ -84,3 +125,51 @@ fritzoffice2:
   name: Office Mitte
   entities:
     - switch.office_mitte
+    
+# Computer
+computer:
+  name: Computer
+  view: yes
+  icon: mdi:server-network
+  entities:
+    - group.oslo
+    - group.c2
+    - group.stuff
+    
+oslo:
+  name: Oslo
+  entities:
+    - sensor.oslo_ads_blocked_today
+    - sensor.oslo_ads_percentage_blocked_today
+    - sensor.oslo_dns_queries_cached
+    - sensor.oslo_dns_queries_forwarded
+    - sensor.oslo_dns_queries_today
+    - sensor.oslo_dns_unique_domains
+    - sensor.oslo_domains_blocked
+    - sensor.oslo_dns_unique_clients
+    - sensor.oslo_seen_clients
+
+c2:
+  name: HassOS C2
+  entities:
+    - sensor.processor_use
+    - sensor.memory_free
+    - sensor.memory_use
+    - sensor.memory_use_percent
+    - sensor.disk_free
+    - sensor.disk_use
+    - sensor.disk_use_percent
+    - sensor.swap_use
+    - sensor.swap_use_percent
+    - sensor.load_1m
+    - sensor.load_5m
+    - sensor.load_15m
+    - sensor.network_in_eth0
+    - sensor.network_out_eth0
+    - sensor.last_boot
+    - sensor.ha_uptime
+
+stuff:
+  name: Sonstiges
+  entities:
+    - sensor.zyxel_switch_uptime
