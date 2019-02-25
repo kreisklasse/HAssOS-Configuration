@@ -80,21 +80,21 @@
     
 ### Tankerkönig E10 Kraftstoffpreise  Query every 600+ seconds ###
 - platform: rest
-  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=a3de1edb-2025-54d6-a52d-692fc70561d1&ids=2025cec6-d76f-422b-b305-fe6b75be12e9
+  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=abcd&ids=2025cec6-d76f-422b-b305-fe6b75be12e9
   name: Mundorf E10
   unit_of_measurement: '€'
   value_template: '{{ value_json.prices["2025cec6-d76f-422b-b305-fe6b75be12e9"].e10 }}'
   scan_interval: 601
   
 - platform: rest
-  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=a3de1edb-2025-54d6-a52d-692fc70561d1&ids=005056ba-7cb6-1ed2-bceb-87412ca64d30
+  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=abcd&ids=005056ba-7cb6-1ed2-bceb-87412ca64d30
   name: Zeithstr E10
   unit_of_measurement: '€'
   value_template: '{{ value_json.prices["005056ba-7cb6-1ed2-bceb-87412ca64d30"].e10 }}'
   scan_interval: 602
   
 - platform: rest
-  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=a3de1edb-2025-54d6-a52d-692fc70561d1&ids=5e665e1a-1512-49ab-822f-1e8d7cd51e93
+  resource: https://creativecommons.tankerkoenig.de/json/prices.php?apikey=abcd&ids=5e665e1a-1512-49ab-822f-1e8d7cd51e93
   name: Agip Neustadt E10
   unit_of_measurement: '€'
   value_template: '{{ value_json.prices["5e665e1a-1512-49ab-822f-1e8d7cd51e93"].e10 }}'
