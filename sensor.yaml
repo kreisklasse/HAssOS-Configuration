@@ -48,25 +48,11 @@
   latitude: !secret lat_ndb
   longitude: !secret long_ndb
 
-### piHole openVPN Oslo ###
-- platform: pi_hole
-  host: !secret ip_oslo
-  name: Oslo
-  monitored_conditions:
-    - ads_blocked_today
-    - ads_percentage_today
-    - dns_queries_today
-    - domains_being_blocked
-    - queries_cached
-    - queries_forwarded
-    - unique_clients
-    - unique_domains
-    - clients_ever_seen
     
 ### piHole openVPN Helsinki ###
 - platform: pi_hole
-  host: !secret ip_helsinki
-  name: Helsinki
+  host: !secret ip_hasso
+  name: Hasso
   monitored_conditions:
     - ads_blocked_today
     - ads_percentage_today
