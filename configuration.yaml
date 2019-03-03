@@ -12,7 +12,7 @@ binary_sensor: !include binarysensor.yaml
 # cloud:
 config:
 conversation:
-device_tracker: !include devicetracker.yaml
+#device_tracker: !include devicetracker.yaml
 discovery:
 duckdns:
   domain: !secret duckdns_domain
@@ -20,43 +20,29 @@ duckdns:
 frontend:
 group: !include groups.yaml
 history:
-hue:
-  bridges:
-    - host: !secret ip_hue
-      allow_unreachable: true
-      allow_hue_groups: false
-intent_script: !include intent_script.yaml
 # introduction:
 logbook:
+luftdaten:
+  sensor_id: 22160
+  show_on_map: false
+  sensors:
+    monitored_conditions:
+      - P1
+      - P2
 map:
-#mqtt:
-#  broker: !secret ip_mqtt_broker
-#  username: !secret mqtt_user
-#  password: !secret mqtt_password
-#mqtt_statestream:
-#  base_topic: homeassistant
-#  publish_attributes: true
-#  publish_timestamps: true
-notify: !include notify.yaml
+#notify: !include notify.yaml
 recorder:
   purge_keep_days: 5
   purge_interval: 1
 script: !include scripts.yaml
 sensor: !include sensor.yaml
 sun:
-switch: !include switch.yaml
-tradfri:
-  host: !secret ip_ikeahub
-  allow_tradfri_groups: false
+#switch: !include switch.yaml
+system_health:
 tts:
   - platform: google
 updater:
   include_used_components: true
-weather:
-  - platform: darksky
-    api_key: !secret darksky_api
-  - platform: met
 zwave:
   usb_path: /dev/ttyACM0
   network_key: !secret zwave_key
-
